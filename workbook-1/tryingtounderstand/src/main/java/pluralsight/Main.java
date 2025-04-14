@@ -1,5 +1,6 @@
 package pluralsight;
 
+import java.sql.SQLOutput;
 import java.util.Scanner;
 
 public class Main {
@@ -125,7 +126,7 @@ public class Main {
         int firstNumber = potatoScanner.nextInt();
         System.out.println("The number is: " + firstNumber);
 
-       */
+
 
         Scanner scanner = new Scanner(System.in);
 
@@ -143,5 +144,34 @@ public class Main {
         System.out.println("The first number is: " + num1 + " and the second number is: " + num2);
 
         System.out.println("The operation is: " + response);
+
+
+       */
+        Scanner scanner = new Scanner(system.in);
+
+        System.out.println("Enter ur name");
+        String name = scanner.nextLine();
+
+
+        System.out.println("enter ur age");
+        int age = scanner.nextInt();
+
+        double price;
+
+        if (age < 18 || age >=65) {
+            price = 22.5;
+        } else {
+            price = 25.00;
+        }
+        System.out.println("The price is: " + price);
+
+        if (age == 25) {
+            System.out.println("You can drink!");
+        }
+        if(name.equals("Raymond")) {
+            System.out.println("I love potatoes!");
+        } else }
+        System.out.println("I dont love potatoes")
+        }
     }
 }
