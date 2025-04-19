@@ -40,19 +40,19 @@ public class CellPhoneApplication {
         scanner.nextLine();  // Consume newline
 
         System.out.print("What model is the phone? ");
-        String model = scanner.nextLine();  // Read entire line till newline
+        model = scanner.nextLine();  // Read entire line till newline
         cellPhone2.setModel(model);
 
         System.out.print("Who is the carrier? ");
-        String carrier = scanner.nextLine();
+        carrier = scanner.nextLine();
         cellPhone2.setCarrier(carrier);
 
         System.out.print("What is the phone number? ");
-        String phoneNumber = scanner.nextLine();
+        phoneNumber = scanner.nextLine();
         cellPhone2.setPhoneNumber(phoneNumber);
 
         System.out.print("Who is the owner of the phone? ");
-        String owner = scanner.nextLine();
+        owner = scanner.nextLine();
         cellPhone2.setOwner(owner);
 
 
