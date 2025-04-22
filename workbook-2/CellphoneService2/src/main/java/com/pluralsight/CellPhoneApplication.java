@@ -8,6 +8,7 @@ public class CellPhoneApplication {
         CellPhone cellPhone1 = new CellPhone();
         CellPhone cellPhone2 = new CellPhone();
 
+
         // Create a scanner object to read user input
         Scanner scanner = new Scanner(System.in);
 
@@ -54,6 +55,8 @@ public class CellPhoneApplication {
         System.out.print("Who is the owner of the phone? ");
         owner = scanner.nextLine();
         cellPhone2.setOwner(owner);
+
+
 
 
 
