@@ -24,10 +24,10 @@ public class StoreApp {
 
             BufferedReader bufferedReader = new BufferedReader(new FileReader("inventory.csv"));
                 while ((line = bufferedReader.readLine()) != null){
-                    String[] parts = line.split("\\|");
-                    int id = Integer.parseInt(parts[0]);
-                    String name = parts[1];
-                    double price = Double.parseDouble(parts[2]);
+                    String[] parts = line.split("\\|"); // spliting line based on |
+                    int id = Integer.parseInt(parts[0]); // takes id
+                    String name = parts[1]; // takes name
+                    double price = Double.parseDouble(parts[2]); //takes price
 
                     inventory.add(new Product(id, name, price));
 }
