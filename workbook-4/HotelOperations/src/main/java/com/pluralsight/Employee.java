@@ -78,5 +78,11 @@ public class Employee {
 
         return regularPay + overtimePay;
 
+
+        /* if(hours worked <= 40) {
+        return hoursWorked * payRate;
+        }else{
+        return (40 * payrate) + ((hours worked - 40) * (payRate * 1.5));
+         */
     }
 }
