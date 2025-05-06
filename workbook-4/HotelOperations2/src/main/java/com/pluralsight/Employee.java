@@ -52,7 +52,10 @@ public class Employee {
             startTime = time;
         }
         public void punchIn(){
-        startTime = LocalDateTime.now();
+        LocalDateTime now = LocalDateTime.now();
+        int hour = now.getHour();
+        int minute = now.getMinute();
+        double time = hour +(minute / 60);
 
         }
         public void punchOut(double time){
@@ -63,7 +66,15 @@ public class Employee {
         }
 
         public void punchOut(){
-        LocalDateTime punchOutTime = LocalDateTime.now();
+
+        LocalDateTime now = LocalDateTime.now();
+
+            double duration = time - startTime;
+            hoursWorked += duration;
+            startTime = 0;
+            int hour = now.getHour();
+            int minute = now.getMinute();
+            double time = hour +(minute / 60);
         }
 
         public void punchTimeCard(double time){
