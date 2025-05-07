@@ -37,6 +37,7 @@ class RoomTest {
         public void cleanRoom_notDirty () {
             //arrange
         Room room = new Room(3, 350);
+      room.checkIn();
         room.checkout();
 
 
