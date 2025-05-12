@@ -1,11 +1,20 @@
 package com.pluralsight;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
     Scanner scanner = new Scanner(System.in);
-        System.out.println("Please enter player 1's name: ");
+
+        System.out.println("Enter number of players");
+        int numberOfPlayers = Integer.parseInt(scanner.nextLine());
+
+
+        ArrayList<String> playerNames = new ArrayList<>();
+
+
+   /*     System.out.println("Please enter player 1's name: ");
         String playerOne = scanner.nextLine();
 
         System.out.println("Player 1 is: " + playerOne);
@@ -14,6 +23,8 @@ public class Main {
         String playerTwo = scanner.nextLine();
 
         System.out.println("Player 2 is: " + playerTwo);
+
+    */
 
 
 
