@@ -1,12 +1,12 @@
 package com.pluralsight;
 
 public class Vehicle {
- private  String color;
- private String model;
- private int numOfPassengers;
- private int cargoCapacity;
- private int fuelCapacity;
- private int topSpeed;
+    private String color;
+    private String model;
+    private int numOfPassengers;
+    private int cargoCapacity;
+    private int fuelCapacity;
+    private int topSpeed;
 
     public String getColor() {
         return color;
@@ -55,4 +55,22 @@ public class Vehicle {
     public void setFuelCapacity(int fuelCapacity) {
         this.fuelCapacity = fuelCapacity;
     }
+
+    public void startEngine() {
+
+    }
+
+    public void stopEngine() {
+
+    }
+
+    public void accelerate() {
+
+    }
+
+    public void brake(){
+
+
+    }
 }
+
