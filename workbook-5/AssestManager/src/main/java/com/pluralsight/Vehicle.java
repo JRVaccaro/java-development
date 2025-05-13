@@ -47,7 +47,8 @@ public class Vehicle extends Asset {
         double value;
 
         if (age <= 3) {
-            value = getOriginalCost() * (1 - 00.3 * age);
+            //(1 - 0.03 * age) means start with 100% (that's the '1') and subtract 3% for each year
+            value = getOriginalCost() * (1 - 0.3 * age);
         } else if (age <= 6) {
             value = getOriginalCost() * (1 - 0.06 * (age - 3)); //6% after 3 years
         } else if (age <= 10) {
