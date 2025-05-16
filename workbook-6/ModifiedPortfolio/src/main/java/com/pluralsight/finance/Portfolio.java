@@ -25,9 +25,10 @@ public class Portfolio {
         return total;
     }
     public Valuable getMostValuable() {
-       if (assets.isEmpty()) return null;
-
-        Valuable mostValuable = (Valuable) assets;
+       if (assets.isEmpty()) {
+           return null;
+       }
+        Valuable mostValuable = assets.get(0); //(Valuable) assets;
         for (Valuable asset : assets) {
             if (asset.getValue() > mostValuable.getValue()) {
                 mostValuable = asset;
@@ -37,9 +38,11 @@ public class Portfolio {
         return mostValuable;
     }
     public Valuable getLeastValuable(){
-        if (assets.isEmpty()) return null;
+        if (assets.isEmpty()) {
+            return null;
+        }
 
-        Valuable leastValuable = (Valuable) assets;
+        Valuable leastValuable =  assets.get(0); //(Valuable) assets;
         for (Valuable asset : assets){
             if (asset.getValue() < leastValuable.getValue()){
                 leastValuable = asset;
