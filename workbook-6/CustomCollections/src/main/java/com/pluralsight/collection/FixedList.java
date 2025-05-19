@@ -21,5 +21,8 @@ public class FixedList<T> {
             System.out.println("Error! List is full!");
         }
     }
+    public List<T> getItems(){
+        return items;
+    }
 
         }

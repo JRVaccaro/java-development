@@ -13,6 +13,6 @@ public class Main {
         FixedList<LocalDate> dates = new FixedList<>(2);
         dates.add(LocalDate.now());
         dates.add(LocalDate.now());
-        dates.add(15); // this line should fail
+      //  dates.add(15); // this line should fail
     }
 }
