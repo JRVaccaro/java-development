@@ -22,6 +22,7 @@ public class Program {
         people.add(new Person("Jasmine", "Williams", 30));
 
         nameSearch(people);
+        calculateAge(people);
     }
     public static void nameSearch(List<Person> people){
         Scanner scanner = new Scanner(System.in);
@@ -33,12 +34,38 @@ public class Program {
 
         for (Person person : people){
             if (person.getFirstName().equalsIgnoreCase(userInput) || person.getLastName().equalsIgnoreCase(userInput)){
-                System.out.println(person.getFirstName() + person.getLastName() + person.getAge());
+                System.out.println(person.getFirstName()+ " " + person.getLastName()+ ": Age: " + person.getAge());
                 found = true;
             }
         }
         if (!found){
             System.out.println("No match found.");
         }
+    }
+    public static void calculateAge(List<Person> people){
+        int totalAge = 0;
+        int maxAge = 0;
+        int minAge = 0; //wrong?
+
+
+
+
+        for (Person person : people){
+            int age = person.getAge();
+            totalAge += age;
+
+            if (age > maxAge){
+                maxAge = age;
+            }
+            if (age < minAge){ //need to fix i think
+                minAge = age;
+            }
+        }
+        double averageAge = (double) totalAge /  people.size();
+
+        System.out.println("Average age: " + averageAge);
+        System.out.println("Oldest age: " + maxAge);
+        System.out.println("Youngest age: " + minAge);
+
     }
 }
