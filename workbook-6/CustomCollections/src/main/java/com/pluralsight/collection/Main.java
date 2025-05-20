@@ -1,6 +1,7 @@
 package com.pluralsight.collection;
 
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 
 public class Main {
     public static void main(String[] args) {
@@ -13,6 +14,7 @@ public class Main {
         FixedList<LocalDate> dates = new FixedList<>(2);
         dates.add(LocalDate.now());
         dates.add(LocalDate.now());
-      //  dates.add(15); // this line should fail
+        //  dates.add(15); // this line should fail
+
     }
-}
+    }
