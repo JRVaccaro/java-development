@@ -16,7 +16,7 @@ public class Program {
         List<Person> matchingPeople = people.stream()
                 .filter(person -> person.getFirstName().equalsIgnoreCase(searchName)
                         || person.getLastName().equalsIgnoreCase(searchName))
-        .collect(Collectors.toList());
+        .toList();
 
             matchingPeople.stream()
                     .forEach(person -> System.out.println(person.getFirstName() + " " + person.getLastName()));
@@ -52,11 +52,10 @@ public class Program {
     }
 
     private static int calculateAverageAge(List<Person> people) {
-        int totalAge = 0;
-        for (Person person : people) {
-            totalAge += person.getAge();
-        }
-        return (int) Math.round((double) totalAge / people.size());
+
+        List<Integer> ages = people.stream().map(Person::getAge).toList();
+        return 0;
+
     }
 
     private static int findOldestAge(List<Person> people) {
