@@ -1,4 +1,4 @@
-package com.pluralsight.NorthwindTradersSpringBoot2.dao.impl;
+package com.pluralsight.NorthwindTradersSpringBoot2.dao;
 
 import com.pluralsight.NorthwindTradersSpringBoot2.dao.interfaces.ITransactionDAO;
 import com.pluralsight.NorthwindTradersSpringBoot2.models.Transaction;
