@@ -1,6 +1,6 @@
-package com.pluralsight.controllers;
+package com.pluralsight.NorthWindTradersAPI3.controllers;
 
-import com.pluralsight.models.Product;
+import com.pluralsight.NorthWindTradersAPI3.models.Product;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
